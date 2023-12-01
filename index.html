@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ayajs@2.0.7/build/style.css">
+   <script type="application/javascript"  src="https://cdn.jsdelivr.net/npm/ayajs@2.0.7/build/aya.js"></script>
+   <title>Todo</title>
+</head>
+
+<body>
+    <script src="./src/task.js"></script>
+   <script>
+      var aya = aya.init();
+      aya.config.text.textanchor = "start";
+      aya.config.text.startoffset = "0%";
+      document.body.append(aya.svg);
+   </script>
+
+   <script>
+      aya.grid(aya.svg);
+   </script>
+</body>
+</html>
